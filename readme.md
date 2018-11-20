@@ -1,5 +1,5 @@
 
-# Synfusion bridge demo
+# Syncfusion bridge demo
 
 ## Setup
 Install dependencies at root level
