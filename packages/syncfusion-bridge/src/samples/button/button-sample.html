@@ -1,0 +1,132 @@
+<template>
+  <require from="components/button/genius-button"></require>
+  <div class="col-sm-12">
+    <h2>Buttons</h2>
+    <br>
+    <p>This documents provides some examples about how to use button component and his variants.
+    </p>
+    <div class="col-sm-12">
+      <ul>
+        <li>
+          <strong>Docs: </strong><a href="https://ej2.syncfusion.com/documentation/button/types-and-styles" target="_blank">https://ej2.syncfusion.com/documentation/button/types-and-styles</a>
+        </li>
+        <li>
+          <strong>Demo: </strong><a href="https://ej2.syncfusion.com/demos/#/material/button/default.html" target="_blank">https://ej2.syncfusion.com/demos/#/material/button/default.html</a>
+        </li>
+        <li>
+          <strong>Zeplin: </strong><a href="https://app.zeplin.io/project/5bbcaff031bd7d099a7307db/screen/5b9bddee329df568a25d375d" target="_blank">https://app.zeplin.io/project/5bbcaff031bd7d099a7307db/screen/5b9bddee329df568a25d375d</a></li>
+        </li>
+      </ul>
+    </div>
+    <br><br>
+    <h3>Genius style Implemented Buttons</h3>
+    <p>We work with four different basic styles of buttons: 1) Primary 2) Secondary 3) Text and 4) Outlined.
+      For each one of this buttons you can see also a different style when the button is disabled.
+    </p>
+    <div class="col-sm-12">
+      <genius-button g-html-content="PRIMARY" g-css-class="e-primary" click.trigger="test(primaryButton)" view-model.ref="primaryButton"></genius-button>
+      <genius-button g-html-content="SECONDARY" g-css-class="e-secondary" click.trigger="test(secondaryButton)" view-model.ref="secondaryButton"></genius-button>
+      <genius-button g-html-content="DISABLED" g-css-class="e-primary e-disabled" g-disabled.bind="true"></genius-button>
+      <br><hr><br>
+      <genius-button g-html-content="TEXT" g-css-class="e-text" click.trigger="test(textButton)" view-model.ref="textButton"></genius-button>
+      <genius-button g-html-content="TEXT DISABLED" g-css-class="e-text e-disabled" g-disabled.bind="true"></genius-button>
+      <genius-button g-html-content="<i class='far fa-clock fa-lg'></i>&nbsp;TEXT WITH ICON" g-css-class="e-text" click.trigger="test(textButton)" view-model.ref="textButton"></genius-button>
+      <br><hr><br>
+      <genius-button g-html-content="OUTLINED" g-css-class="e-outlined" click.trigger="test(outlinedButton)" view-model.ref="outlinedButton"></genius-button>
+      <genius-button g-html-content="OUTLINED DISABLED" g-css-class="e-outlined e-disabled" g-disabled.bind="true" click.trigger="test(outlinedDisabledButton)" view-model.ref="outlinedDisabledButton"></genius-button>
+      <genius-button g-html-content="<i class='far fa-clock fa-lg'></i>&nbsp;ICON OUTLINED" g-css-class="e-outlined" click.trigger="test(outlinedButton)" view-model.ref="outlinedButton">
+      </genius-button>
+    </div>
+    <div class="row"><hr></div>
+    <div class="col-sm-12">
+      <h4>Code</h4>
+      <br>
+      <pre data-lang="HTML">
+        &lt;genius-button g-html-content="PRIMARY" g-css-class="e-primary" click.trigger="test(primaryButton)" view-model.ref="primaryButton">&lt;/genius-button>
+        &lt;genius-button g-html-content="SECONDARY" g-css-class="e-secondary" click.trigger="test(secondaryButton)" view-model.ref="secondaryButton">&lt;/genius-button>
+        &lt;genius-button g-html-content="DISABLED" g-css-class="e-primary e-disabled" g-disabled.bind="true">&lt;/genius-button>
+
+        &lt;genius-button g-html-content=&quot;TEXT&quot; g-css-class=&quot;e-text&quot; click.trigger=&quot;test(textButton)&quot; view-model.ref=&quot;textButton&quot;&gt;&lt;/genius-button&gt;
+        &lt;genius-button g-html-content=&quot;TEXT DISABLED&quot; g-css-class=&quot;e-text e-disabled&quot; g-disabled.bind=&quot;true&quot;&gt;&lt;/genius-button&gt;
+        &lt;genius-button g-html-content=&quot;&lt;i class='far fa-clock fa-lg'&gt;&lt;/i&gt;&amp;nbsp;TEXT WITH ICON&quot; g-css-class=&quot;e-text&quot; click.trigger=&quot;test(textButton)&quot; view-model.ref=&quot;textButton&quot;&gt;&lt;/genius-button&gt;
+
+        &lt;genius-button g-html-content=&quot;OUTLINED&quot; g-css-class=&quot;e-outlined&quot; click.trigger=&quot;test(outlinedButton)&quot; view-model.ref=&quot;outlinedButton&quot;&gt;&lt;/genius-button&gt;
+        &lt;genius-button g-html-content=&quot;OUTLINED DISABLED&quot; g-css-class=&quot;e-outlined e-disabled&quot; g-disabled.bind=&quot;true&quot; click.trigger=&quot;test(outlinedDisabledButton)&quot; view-model.ref=&quot;outlinedDisabledButton&quot;&gt;&lt;/genius-button&gt;
+        &lt;genius-button g-html-content=&quot;&lt;i class='far fa-clock fa-lg'&gt;&lt;/i&gt;&amp;nbsp;ICON OUTLINED&quot; g-css-class=&quot;e-outlined&quot; click.trigger=&quot;test(outlinedButton)&quot; view-model.ref=&quot;outlinedButton&quot;&gt; &lt;/genius-button&gt;
+      </pre>
+      <br>
+      <p><strong>Icons: </strong> We can use FontAwesome Library as icons. To do it, you must import icon by icon when you need some icon that is not in the list. You can do it by pass icons to app.ts File.</p>
+      <br><br>
+      <h4>Enabled/Disabled Example</h4>
+      <genius-button g-html-content="Toggle" g-css-class="e-text" g-is-toggle="true" click.trigger="enableDisable()"></genius-button>
+      <genius-button g-html-content.bind="enableDisableCaption" g-css-class.bind="enableDisableClass" g-disabled.bind="enableDisableStatus"></genius-button>
+
+      <br><br>
+      <h4>Binding</h4>
+      <br>
+      <div class="col-sm-12">
+        <p>You can simple bind your element using Aurelia. Take a look at the code above:</p>
+      </div>
+      <div class="col-sm-12">
+          <genius-button g-html-content.bind="bindingButtonCaption" g-css-class.bind="buttonCssClass" click.trigger="changeBindingButton()"></genius-button>
+      </div>
+      <br><br><hr>
+      <div class="col-sm-12">
+        <br>
+        <pre data-lang="HTML">
+            &lt;genius-button g-html-content.bind="bindingButtonCaption" g-css-class.bind="buttonCssClass" click.trigger="changeBindingButton()">&lt;/genius-button>
+        </pre>
+        <br>
+        <pre data-lang="TYPESCRIPT">
+            import { ItemModel } from "@syncfusion/ej2-splitbuttons";
+            import { GeniusButton } from "components/button/genius-button";
+
+            export class ButtonSample {
+              public bindingButtonCaption: string = "Binding Button";
+              public buttonCssClass: string = "e-primary";
+
+              /**
+              * Example class to change Binding Button description and class
+              */
+              public changeBindingButton(){
+                if (this.bindingButtonCaption === "Changed"){
+                  this.bindingButtonCaption = "Binding Button";
+                  this.buttonCssClass = "e-primary";
+                } else {
+                  this.bindingButtonCaption = "Changed";
+                  this.buttonCssClass = "e-secondary";
+                }
+              }
+            }
+        </pre>
+      </div>
+  <div>
+  <div class="row"><hr></div>
+  <div class="col-sm-12">
+    <h3>Submit button</h3>
+    <br><br>
+    <h4>Example</h4>
+    <form submit.trigger="testSendForm()">
+      <input type="text" value.bind="testField" placeholder="Type something here..." name="test_field" class="form-control">
+      <genius-button g-html-content="Send" g-css-class="e-primary" type="submit"></genius-button>
+    </form>
+    <br>
+    <div class="col-sm-12">
+      <pre data-lang="HTML">
+          &lt;form submit.trigger="testSendForm()">
+            &lt;input type="text" value.bind="testField" name="test_field" class="form-control">
+            &lt;genius-button g-css-class="e-primary" g-html-content="Send" type="submit">&lt;/genius-button>
+            &lt;/form>
+      </pre>
+      <pre data-lang="TYPESCRIPT">
+          //Some code Here
+          public testField: string = "";
+          ...
+          public function testSendForm(){
+            print("Value: " + testField);
+          }
+          ...
+      </pre>
+    </div>
+  </div>
+</template>

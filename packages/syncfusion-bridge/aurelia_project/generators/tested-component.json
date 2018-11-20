@@ -1,0 +1,4 @@
+{
+  "name": "tested-component",
+  "description": "Creates a custom component class, template (view model and view) and test, placing them in the corresponding source folder (or optionally in sub folders)."
+}

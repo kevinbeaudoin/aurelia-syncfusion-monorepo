@@ -1,0 +1,245 @@
+<?xml version="1.0" ?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage lines-valid="92" lines-covered="88" line-rate="0.9565" branches-valid="22" branches-covered="18" branch-rate="0.8181999999999999" timestamp="1542747858099" complexity="0" version="0.1">
+  <sources>
+    <source>D:\HG\POC\monorepo\packages\syncfusion-bridge</source>
+  </sources>
+  <packages>
+    <package name="button.src.components.button" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="genius-button.ts" filename="src\components\button\src\components\button\genius-button.ts" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="(anonymous_8)" hits="1" signature="()V">
+              <lines>
+                <line number="14" hits="1"/>
+              </lines>
+            </method>
+            <method name="GeniusButton" hits="1" signature="()V">
+              <lines>
+                <line number="26" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_10)" hits="1" signature="()V">
+              <lines>
+                <line number="30" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="1" branch="false"/>
+            <line number="15" hits="1" branch="false"/>
+            <line number="16" hits="1" branch="false"/>
+            <line number="17" hits="1" branch="false"/>
+            <line number="18" hits="1" branch="false"/>
+            <line number="19" hits="1" branch="false"/>
+            <line number="20" hits="1" branch="false"/>
+            <line number="21" hits="1" branch="false"/>
+            <line number="22" hits="1" branch="false"/>
+            <line number="23" hits="1" branch="false"/>
+            <line number="24" hits="1" branch="false"/>
+            <line number="26" hits="1" branch="false"/>
+            <line number="27" hits="1" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="30" hits="1" branch="false"/>
+            <line number="31" hits="1" branch="false"/>
+            <line number="32" hits="1" branch="false"/>
+            <line number="34" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="genius-checkbox.ts" filename="src\components\button\src\components\button\genius-checkbox.ts" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="(anonymous_8)" hits="1" signature="()V">
+              <lines>
+                <line number="13" hits="1"/>
+              </lines>
+            </method>
+            <method name="GeniusCheckbox" hits="2" signature="()V">
+              <lines>
+                <line number="24" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_10)" hits="2" signature="()V">
+              <lines>
+                <line number="28" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_11)" hits="1" signature="()V">
+              <lines>
+                <line number="35" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_12)" hits="2" signature="()V">
+              <lines>
+                <line number="40" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_13)" hits="1" signature="()V">
+              <lines>
+                <line number="45" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="1" branch="false"/>
+            <line number="14" hits="1" branch="false"/>
+            <line number="15" hits="1" branch="false"/>
+            <line number="16" hits="1" branch="false"/>
+            <line number="17" hits="1" branch="false"/>
+            <line number="18" hits="1" branch="false"/>
+            <line number="19" hits="1" branch="false"/>
+            <line number="20" hits="1" branch="false"/>
+            <line number="21" hits="1" branch="false"/>
+            <line number="22" hits="1" branch="false"/>
+            <line number="24" hits="2" branch="false"/>
+            <line number="25" hits="2" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="28" hits="1" branch="false"/>
+            <line number="29" hits="2" branch="false"/>
+            <line number="30" hits="2" branch="false"/>
+            <line number="31" hits="2" branch="false"/>
+            <line number="32" hits="2" branch="false"/>
+            <line number="35" hits="1" branch="false"/>
+            <line number="36" hits="1" branch="false"/>
+            <line number="40" hits="2" branch="false"/>
+            <line number="41" hits="2" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="42" hits="1" branch="false"/>
+            <line number="44" hits="1" branch="false"/>
+            <line number="45" hits="1" branch="false"/>
+            <line number="46" hits="1" branch="false"/>
+            <line number="47" hits="1" branch="false"/>
+            <line number="52" hits="1" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="common.src.components.common" line-rate="0.9167000000000001" branch-rate="0.75">
+      <classes>
+        <class name="constants.ts" filename="src\components\common\src\components\common\constants.ts" line-rate="1" branch-rate="1">
+          <methods>
+          </methods>
+          <lines>
+            <line number="2" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="events.ts" filename="src\components\common\src\components\common\events.ts" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="getEventOption" hits="3" signature="()V">
+              <lines>
+                <line number="9" hits="3"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="1" signature="()V">
+              <lines>
+                <line number="23" hits="1"/>
+              </lines>
+            </method>
+            <method name="fireEvent" hits="1" signature="()V">
+              <lines>
+                <line number="35" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="3" branch="false"/>
+            <line number="13" hits="3" branch="false"/>
+            <line number="15" hits="3" branch="false"/>
+            <line number="16" hits="13" branch="false"/>
+            <line number="17" hits="13" branch="false"/>
+            <line number="18" hits="13" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="21" hits="1" branch="false"/>
+            <line number="22" hits="1" branch="false"/>
+            <line number="23" hits="1" branch="false"/>
+            <line number="25" hits="3" branch="false"/>
+            <line number="36" hits="1" branch="false"/>
+            <line number="40" hits="1" branch="false"/>
+            <line number="41" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="genius-control-base.ts" filename="src\components\common\src\components\common\genius-control-base.ts" line-rate="0.8667" branch-rate="0.7143">
+          <methods>
+            <method name="(anonymous_2)" hits="4" signature="()V">
+              <lines>
+                <line number="7" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_4)" hits="0" signature="()V">
+              <lines>
+                <line number="75" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_5)" hits="3" signature="()V">
+              <lines>
+                <line number="86" hits="3"/>
+              </lines>
+            </method>
+            <method name="(anonymous_6)" hits="7" signature="()V">
+              <lines>
+                <line number="112" hits="7"/>
+              </lines>
+            </method>
+            <method name="(anonymous_7)" hits="3" signature="()V">
+              <lines>
+                <line number="136" hits="3"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="1" branch="false"/>
+            <line number="15" hits="1" branch="false"/>
+            <line number="23" hits="1" branch="false"/>
+            <line number="31" hits="1" branch="false"/>
+            <line number="57" hits="3" branch="false"/>
+            <line number="75" hits="1" branch="false"/>
+            <line number="76" hits="0" branch="false"/>
+            <line number="86" hits="1" branch="false"/>
+            <line number="87" hits="3" branch="false"/>
+            <line number="88" hits="3" branch="false"/>
+            <line number="89" hits="73" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="90" hits="39" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="91" hits="0" branch="false"/>
+            <line number="92" hits="0" branch="false"/>
+            <line number="95" hits="39" branch="false"/>
+            <line number="99" hits="3" branch="false"/>
+            <line number="112" hits="1" branch="false"/>
+            <line number="114" hits="7" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="115" hits="3" branch="false"/>
+            <line number="118" hits="7" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="119" hits="1" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="120" hits="0" branch="false"/>
+            <line number="121" hits="1" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="122" hits="1" branch="false"/>
+            <line number="123" hits="1" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="124" hits="1" branch="false"/>
+            <line number="125" hits="1" branch="false"/>
+            <line number="136" hits="1" branch="false"/>
+            <line number="137" hits="3" branch="false"/>
+            <line number="139" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="naming.ts" filename="src\components\common\src\components\common\naming.ts" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="getMatchingPropertyName" hits="40" signature="()V">
+              <lines>
+                <line number="9" hits="40"/>
+              </lines>
+            </method>
+            <method name="unhyphenate" hits="1" signature="()V">
+              <lines>
+                <line number="23" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="0" signature="()V">
+              <lines>
+                <line number="24" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="40" branch="false"/>
+            <line number="11" hits="40" branch="false"/>
+            <line number="12" hits="40" branch="false"/>
+            <line number="24" hits="1" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

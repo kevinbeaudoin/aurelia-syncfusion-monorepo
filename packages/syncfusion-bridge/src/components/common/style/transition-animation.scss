@@ -1,0 +1,27 @@
+.rotating-logo{  
+    top: 35%;
+    position: relative;
+    width: 175px;
+    margin: auto;
+    -webkit-animation: spin 3s infinite linear;
+}
+
+.loading-container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    background-color: lightsteelblue;
+}
+
+@-webkit-keyframes spin {
+    0%  {
+        -webkit-transform: rotate(0); /* Safari */
+        transform: rotate(0);
+        
+    }
+    100% {
+        -webkit-transform: rotate(-360deg); /* Safari */
+        transform: rotate(-360deg);
+    }   
+}

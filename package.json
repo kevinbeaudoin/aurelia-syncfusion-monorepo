@@ -1,0 +1,15 @@
+{
+    "name": "root",
+    "private": true,
+    "devDependencies": {
+        "lerna": "^3.0.0-rc.0"
+    },
+    "scripts": {
+        "clean": "lerna clean --yes && rimraf node_modules",
+        "bootstrap": "lerna bootstrap",
+        "bootstrap-ci": "lerna bootstrap --ci",
+        "build": "lerna run build",
+        "samples": "lerna exec --scope syncfusion-bridge -- au run --watch",
+        "test": "lerna run test"
+    }
+}

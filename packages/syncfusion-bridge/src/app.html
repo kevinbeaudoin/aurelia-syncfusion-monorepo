@@ -1,0 +1,10 @@
+<template>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+  <h1>Genius UI Components</h1>
+  <ul repeat.for="nav of router.navigation">
+      <li class="${nav.isActive ? 'active' : ''}"><a href.bind="nav.href">${nav.title}</a></li>
+  </ul>
+  <br><hr><br>
+  <router-view></router-view>
+</template>

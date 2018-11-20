@@ -1,0 +1,24 @@
+<template>
+  <require from="components/button/genius-button"></require>
+  <require from="components/button/genius-checkbox"></require>
+  <h2>Checkbox</h2>
+  <genius-checkbox g-element-id="default" g-label="Checkbox"></genius-checkbox><br><br>
+  <genius-checkbox g-element-id="checked" g-label="Checked Checkbox" g-checked="true"></genius-checkbox><br><br>
+  <genius-checkbox g-element-id="labelBefore" g-label="Label Before" g-label-position="Before"></genius-checkbox><br><br>
+  <genius-checkbox g-element-id="labelAfter" g-label="Label After" g-label-position="After"></genius-checkbox>
+  
+  <br><br><br>
+  <h2>Binding</h2>
+  <genius-checkbox g-element-id="changeCaption" g-label.bind="checkboxCaption" g-checked.two-way="checkboxValue"></genius-checkbox>
+  <br>
+  <genius-checkbox g-element-id="mirror" g-label="Always same check state as above checkbox" g-disabled="true" g-checked.two-way="checkboxValue"></genius-checkbox>
+
+  <br><br><br>
+  <h2>Enabled / Disabled</h2>
+  <genius-button g-label="Toggle" g-css-class="e-flat" g-is-toggle="true" click.trigger="enableDisable(stateCheckbox)"></genius-button>
+  <genius-checkbox g-element-id="stateCheckbox" g-label="Enabled" view-model.ref="stateCheckbox"></genius-checkbox>
+
+  <br><br><br>
+  <h2>Events</h2>
+  <genius-checkbox g-element-id="eventCheckbox" g-label="Throws change event on click" g-on-change.trigger="displayCheckedChanged($event.detail)"></genius-checkbox>
+</template>

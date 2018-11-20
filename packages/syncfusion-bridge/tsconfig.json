@@ -1,0 +1,37 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es5",
+    "sourceMap": true,
+    "module": "esnext",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "sourceRoot": "src",
+    "allowJs": true,
+    "baseUrl": "src",
+    "skipLibCheck": true,
+    "downlevelIteration": true,
+    "lib": [
+      "es2017", "dom"
+    ]
+  },
+    "include": [
+        "src/**/*",
+    ],
+  "exclude": [
+    "node_modules",
+    "aurelia_project",
+    "obj",
+    "static",
+    "wwwroot"
+  ],
+  "filesGlob": [
+    "./src/**/*.ts",
+    "./test/**/*.ts",
+    "./custom_typings/**/*.d.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": false
+  }
+}

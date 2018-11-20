@@ -1,0 +1,1 @@
+export declare type Sorting = "asc" | "desc";

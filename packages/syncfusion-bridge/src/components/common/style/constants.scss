@@ -1,0 +1,226 @@
+$black-87: rgba(0, 0, 0, 0.87);
+$black-60: rgba(0, 0, 0, 0.60);
+$black-54: rgba(0, 0, 0, 0.54);
+$black-38: rgba(0, 0, 0, 0.38);
+$black-12: rgba(0, 0, 0, 0.12);
+
+$white: #ffffff;
+$grey-50:#fafafa;
+$grey-100:#f5f5f5;
+
+$genius-navy: #00003D; //primary
+$genius-royal-blue: #001EAA;
+$genius-pure-blue: #0A6DFF; //secondary
+$genius-pale-blue: #59B5FF;
+$genius-red: #EF1444;
+$genius-grey: #e2e4ec;
+
+$accent: yellow !default;
+
+$primary-color: $genius-navy;
+$secondary-color: $genius-pure-blue;
+$small-screen-padding: 16px;
+$medium-screen-padding: 16px;
+$large-screen-padding: 24px;
+$x-large-screen-padding: 24px;
+$small-screen-width: 360px;
+$medium-screen-width: 712px;
+$large-screen-width: 960px;
+$x-large-screen-width: 1200px;
+
+@mixin ButtonFont($fontColor){
+  color: $fontColor !important;
+  text-transform: uppercase;
+  font-family: Roboto !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 1.14 !important;
+  letter-spacing: 1.25px !important;
+}
+
+@mixin H1 {
+    font-family: Roboto !important;
+    font-size: 96px !important;
+    font-weight: 300 !important;
+    letter-spacing: -1.5px !important;
+    color: $black-87 !important;
+}
+
+@mixin H2 {
+    font-family: Roboto !important;
+    font-size: 60px !important;
+    font-weight: 300 !important;
+    letter-spacing: -0.5px !important;
+    color: $black-87 !important;
+}
+
+@mixin H3 {
+    font-family: Roboto !important;
+    font-size: 48px !important;
+    color: $black-87 !important;
+}
+
+@mixin H4 {
+    font-family: Roboto !important;
+    font-size: 34px !important;
+    letter-spacing: 0.3px !important;
+    color: $black-87 !important;
+}
+
+@mixin H5 {
+    font-family: Roboto !important;
+    font-size: 24px !important;
+    color: $black-87 !important;
+}
+
+@mixin H6 {
+    font-family: Roboto !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.3px !important;
+    color: $black-87 !important;
+}
+
+body {
+    font-family: Roboto !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    letter-spacing: 1 !important;
+    color: $black-60 !important;
+}
+
+@mixin Overline {
+    text-transform: uppercase !important;
+    font-family: Roboto !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    line-height: 16px !important;
+    letter-spacing: 2px !important;
+    color: $black-60 !important;
+}
+
+@mixin Body-1 {
+    font-family: Roboto !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
+    font-stretch: normal !important;
+    line-height: 1.5 !important;
+    letter-spacing: 0.2px !important;
+    color: $black-87 !important;
+}
+
+@mixin Body-2 {
+    font-family: Roboto !important;
+    font-size: 14px !important;
+    line-height: 1.43 !important;
+    letter-spacing: 0.3px !important;
+    color: $black-60 !important;
+}
+
+@mixin Subtitle-1 {
+    font-family: Roboto !important;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    letter-spacing: 0.2px !important;
+    color: $black-60 !important;
+}
+
+@mixin Subtitle-2 {
+    font-family: Roboto !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 1.71 !important;
+    letter-spacing: 0.1px !important;
+    color: $black-60 !important;
+}
+
+@mixin Caption {
+    font-family: Roboto !important;
+    font-size: 12px !important;
+    line-height: 1.33 !important;
+    letter-spacing: 0.4px !important;
+    color: $black-60 !important;
+}
+
+@mixin Primary {
+    font-family: Roboto !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-stretch: normal !important;
+    line-height: normal !important;
+    letter-spacing: 0.5px !important;
+    color: $genius-navy !important;
+}
+
+@mixin Secondary {
+    font-family: Roboto !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-stretch: normal !important;
+    line-height: 28px !important;
+    letter-spacing: 0.5px !important;
+    color: $genius-pure-blue !important;
+}
+
+@mixin High-Emphasis {
+    font-family: Roboto !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-stretch: normal !important;
+    line-height: 1.75 !important;
+    letter-spacing: 0.5px !important;
+    color: rgba(0, 0, 0, 0.87) !important;
+    color: $black-87 !important;
+}
+
+@mixin Medium-Emphasis {
+    font-family: Roboto !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-stretch: normal !important;
+    line-height: 1.75 !important;
+    letter-spacing: 0.5px !important;
+    color: rgba(0, 0, 0, 0.6) !important;
+    color: $black-60 !important;
+}
+
+@mixin Disabled {
+    width: 124px !important;
+    height: 28px !important;
+    font-family: Roboto !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-stretch: normal !important;
+    line-height: 1.75 !important;
+    letter-spacing: 0.5px !important;
+    color: rgba(0, 0, 0, 0.38) !important;
+    color: $black-38 !important;
+}
+
+@mixin Active-Btn-Blue-Shade {
+    cursor: pointer;
+    color: $genius-pure-blue !important;
+    box-shadow: 0 1px 3px 0 $genius-pure-blue, 0 2px 2px 0 rgba(89, 181, 255, 0.12), 0 0 2px 0 rgba(89, 181, 255, 0.14) !important;
+}
+
+button {
+    @include ButtonFont($white);
+}
+
+.pad-16 {
+    padding: 16px;
+}
+
+.pad-t-16 {
+    padding-top: 16px;
+}
+
+.margin-b-16 {
+    margin-bottom: 16px;
+}
